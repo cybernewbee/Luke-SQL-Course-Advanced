@@ -1,3 +1,9 @@
---Advanced content using VS Code       
-
-![Screen Shot 2024-06-25 at 1 59 08 PM](https://github.com/cybernewbee/Luke-SQL-Course-Advanced/assets/121833641/66dfb7ad-f539-4886-971e-8dd5d332eebf)
+# Introduction
+Raw data was provided by Luke Barousse from his SQL course on his YouTube channel. The data set was built by collecting
+data from job posting websites. The data set consists of job titles, salary, location, required skills, etc. 
+SQL queries can be found here. 
+# Background
+# Tools I Used
+# The Analysis
+# What I learned
+# Conclusions 
