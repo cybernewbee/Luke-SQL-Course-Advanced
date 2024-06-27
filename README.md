@@ -18,8 +18,7 @@ This analysis tried to pinpoint 💰top-paying jobs and associated skills. The a
 The questions mentioned above were translated into queries. The following are my approaches.
 ### 1. What are the top-paying data analyst jobs? 
 Ordering data entries by salaries. Joining company name table since company name is not in the same table.
-```
-
+```sql
 SELECT
     job_id,
     salary_year_avg,
@@ -38,8 +37,14 @@ WHERE
 ORDER BY salary_year_avg DESC
 LIMIT 10
 ```
+Here is a break down of the top-paying jobs in 2023
+- **Wide Salary Range**: annual salaries range from $184,000 to $650,000 showing the potential of this field.
+- **Various Employers**: the result shows companies hiring data analyst are from different industries, such as Meta, AT&T, Smartasset, etc,.
+- **Various Positions**: opening positions also vary from data analyst to director of analytics
+
 ## 2. What skills are required for these top-paying jobs?
 Based on question 1, join the skill table to obtain skill names.
+
 3. What skills are most in demand for data analysts?
 4. Which skills are associated with higher salaries?
 5. What are the most optimal skills to learn?
