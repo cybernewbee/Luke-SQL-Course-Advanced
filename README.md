@@ -31,7 +31,7 @@ Based on question 1, join the skill table to obtain skill names.
 A skill count for all data analyst job postings was performed. The result is similar to question 2. 
 ![Screen Shot 2024-06-28 at 2 23 09 PM](https://github.com/cybernewbee/Luke-SQL-Course-Advanced/assets/121833641/1183b133-b4d9-45db-a8c5-712e3a60821f)
 ### 4. What are the most optimal skills to learn?
-This question is basically asking which jobs are both in demand and associated with high salaries. My approach is to count total job postings, then group them by skills, and group them by average salary per skill. 
+This question is basically asking which jobs are both in demand and associated with high salaries. My approach is to count total job postings, then group them by skills, and group them by average salary per skill. <br/>
 ![Screen Shot 2024-06-28 at 2 48 26 PM](https://github.com/cybernewbee/Luke-SQL-Course-Advanced/assets/121833641/93f074fa-5864-4500-9fcd-3181bdfcfe08)
 - Sas can be a potential skill to learn in the future
 - SQL, Python, and R combined with Tableau and Power BI is the most important skill set for anybody who wants to get into the field
