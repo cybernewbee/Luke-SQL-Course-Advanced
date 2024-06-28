@@ -17,7 +17,7 @@ FROM job_postings_fact
 LEFT JOIN company_dim ON
     job_postings_fact.company_id = company_dim.company_id
 INNER JOIN skills_and_id ON
-    job_postings_fact.job_id = skills_and_id.job_id  --makeing sure all jobs associate wtih a skill
+    job_postings_fact.job_id = skills_and_id.job_id  --making sure all jobs are associated with a skill
 WHERE 
     salary_year_avg IS NOT NULL AND
     job_title_short = 'Data Analyst' AND
@@ -26,16 +26,33 @@ ORDER BY salary_year_avg DESC
 LIMIT 10
 
 /*
-The top 10 most common skills in the dataset for top-paying jobs in 2023 are:
-
-SQL: 398 occurrences
-Excel: 256 occurrences
-Python: 236 occurrences
-Tableau: 230 occurrences
-R: 148 occurrences
-SAS: 126 occurrences
-Power BI: 110 occurrences
-PowerPoint: 58 occurrences
-Looker: 49 occurrences
-Word: 48 occurrences
+the above does not work because jobs count limits result to 10, but 1 job can have multiple skills
 */
+
+
+WITH top_paying_jobs AS (
+    SELECT	
+        job_id,
+        job_title,
+        salary_year_avg,
+        name AS company_name
+    FROM
+        job_postings_fact
+    LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
+    WHERE
+        job_title_short = 'Data Analyst' AND 
+        job_location = 'Anywhere' AND 
+        salary_year_avg IS NOT NULL
+    ORDER BY
+        salary_year_avg DESC
+    LIMIT 10
+)
+
+SELECT  
+    top_paying_jobs.*,
+    skills
+FROM top_paying_jobs
+INNER JOIN skills_job_dim ON top_paying_jobs.job_id = skills_job_dim.job_id
+INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+ORDER BY
+    salary_year_avg DESC
