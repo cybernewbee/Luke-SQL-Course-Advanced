@@ -71,7 +71,7 @@ WHERE
 GROUP BY
         skills_dim.skill_id
 HAVING 
-    COUNT(skills_job_dim.job_id) > 100 --demand count does not exsit due to excution order; aggreation must be inside HAVING;
+    COUNT(skills_job_dim.job_id) > 50 --demand count does not exsit due to excution order; aggreation must be inside HAVING;
 ORDER BY
        avg_salary DESC,  
      demand_count DESC  

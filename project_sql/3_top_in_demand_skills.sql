@@ -15,5 +15,5 @@ GROUP BY
     skills_job_dim.skill_id, skills 
 ORDER BY
     skill_count DESC
-LIMIT 10
+LIMIT 15
 
