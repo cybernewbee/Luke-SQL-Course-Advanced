@@ -29,7 +29,8 @@ Based on question 1, join the skill table to obtain skill names.
 ![Screen Shot 2024-06-28 at 2 06 12 PM](https://github.com/cybernewbee/Luke-SQL-Course-Advanced/assets/121833641/e6b7e904-7ada-4aab-8d21-25bbda89a518)
 -the result shows SQL, Python, Excel, and R are among the most wanted skills.
 ###3. What skills are most in demand for data analysts?
-
+A skill count for all data analyst job postings was performed. The result is similar to question 2. 
+![Screen Shot 2024-06-28 at 2 23 09 PM](https://github.com/cybernewbee/Luke-SQL-Course-Advanced/assets/121833641/1183b133-b4d9-45db-a8c5-712e3a60821f)
 ###4. Which skills are associated with higher salaries?
 ###5. What are the most optimal skills to learn?
 ## What I learned
